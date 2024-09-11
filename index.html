@@ -3,9 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drug Detector</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drug Trafficking Detection System</title>
+    <style>
+        /* Basic CSS for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .dashboard {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+
+        .card h3 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .heatmap {
+            height: 200px;
+            background-color: #ddd;
+            text-align: center;
+            line-height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        td {
+            background-color: #fff;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Header -->
+    <header>
+        <h1>Drug Trafficking Detection System</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#users">User Analysis</a>
+        <a href="#correlation">Cross-Platform Correlation</a>
+        <a href="#reports">Reports</a>
+        <a href="#settings">Settings</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Dashboard Section -->
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="dashboard">
+                <div class="card">
+                    <h3>Flagged Users</h3>
+                    <p>Number of flagged users: <strong>50</strong></p>
+                </div>
+                <div class="card">
+                    <h3>Recent Alerts</h3>
+                    <p>Suspicious behavior detected in <strong>WhatsApp</strong> group.</p>
+                </div>
+                <div class="card">
+                    <h3>Open Cases</h3>
+                    <p>Ongoing investigations: <strong>5</strong></p>
+                </div>
+            </div>
+            <div class="heatmap">
+                Heatmap Visualization of Drug Trafficking Hotspots
+            </div>
+        </section>
+
+        <!-- User Analysis Section -->
+        <section id="users">
+            <h2>User Analysis</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Username</th>
+                        <th>Platform</th>
+                        <th>Risk Score</th>
+                        <th>Last Activity</th>
+                    </tr>
+                    <tr>
+                        <td>user123</td>
+                        <td>WhatsApp</td>
+                        <td>High</td>
+                        <td>2 hours ago</td>
+                    </tr>
+                    <tr>
+                        <td>user456</td>
+                        <td>Telegram</td>
+                        <td>Medium</td>
+                        <td>5 hours ago</td>
+                    </tr>
+                    <!-- Add more users here -->
+                </table>
+            </div>
+        </section>
+
+        <!-- Cross-Platform Correlation Section -->
+        <section id="correlation">
+            <h2>Cross-Platform Correlation</h2>
+            <p>Showing linked accounts between WhatsApp, Telegram, and Instagram:</p>
+            <div class="heatmap">
+                Correlation Graph
+            </div>
+        </section>
+
+        <!-- Reports Section -->
+        <section id="reports">
+            <h2>Generate Reports</h2>
+            <p>Generate custom reports for flagged users and suspicious activities:</p>
+            <button>Generate PDF Report</button>
+            <button>Generate CSV Report</button>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings">
+            <h2>Settings</h2>
+            <p>Manage user permissions and configure system settings.</p>
+        </section>
+    </div>
 </body>
 </html>
